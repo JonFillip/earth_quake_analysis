@@ -1,35 +1,45 @@
 import json
 
-from plotly.graph_objs import Scattergeo, Layout
 from plotly import offline
+from plotly.graph_objs import Layout
 
 # Explore the structure of the data.
 filename = "/Users/johnphillip/PycharmProjects/earth_quake_analysis/data" \
-           "/eq_data_1_day_m1.json"
+           "/eq_data_30_day_m1.json"
 
 with open(filename) as file_object:
     eq_data = json.load(file_object)
 
 eq_dicts = eq_data['features']
+title = eq_data['metadata']['title']
 
 # Extracting Magnitudes
-mags, longs, lats = [], [], []
+mags, longs, lats, hover_texts = [], [], [], []
 for eq_dict in eq_dicts:
-    try:
-        mag = eq_dict['properties']['mag']
-        long = eq_dict['geometry']['coordinates'][0]
-        lat = eq_dict['geometry']['coordinates'][1]
-    except ValueError:
-        print("Value not found for this data key.")
-    else:
-        mags.append(mag)
-        longs.append(long)
-        lats.append(lat)
+    mags.append(eq_dict['properties']['mag'])
+    longs.append(eq_dict['geometry']['coordinates'][0])
+    lats.append(eq_dict['geometry']['coordinates'][1])
+    hover_texts.append(eq_dict['properties']['title'])
 
 # Map the earthquakes.
-data = [Scattergeo(lon=longs, lat=lats)]
-my_layout = Layout(title='Global Earthquakes')
+data = [{
+    'type': 'scattergeo',
+    'lon': longs,
+    'lat': lats,
+    'text': hover_texts,
+    'marker': {
+        'size': [5 * mag for mag in mags],
+        'color': mags,
+        'colorscale': 'Viridis',
+        'reversescale': True,
+        'colorbar': {'title': 'Magnitude'},
+    }
+}]
+my_layout = Layout(title=title)
 
 # Style the plot
 fig = {'data': data, 'layout': my_layout}
-offline.plot(fig, filename='eq_html_plots/global_earthquakes_visualization.html')
+offline.plot(fig,
+             filename='/Users/johnphillip/PycharmProjects'
+                      '/earth_quake_analysis/eq_html_plots'
+                      '/global_earthquakes_30days.html')
