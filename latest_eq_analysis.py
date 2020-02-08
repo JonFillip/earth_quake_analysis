@@ -1,7 +1,7 @@
 import json
 
 from plotly import offline
-from plotly.graph_objs import Layout
+from plotly.graph_objs import Scattergeo, Layout
 
 # Open file and explore structure of the file's data
 filename = "/Users/johnphillip/PycharmProjects/earth_quake_analysis/data" \
@@ -17,24 +17,33 @@ title = eq_data['metadata']['title']
 
 # Extract the magnitudes, longitude, latitudes and earthquake title for each
 # earthquake event.
-mags, longs, lats, event_titles = [], [], [], []
+mags, longs, lats, hover_texts = [], [], [], []
 for eq_feature in eq_features:
-    mags.append(eq_feature['properties']['mag'])
-    longs.append(eq_feature['geometry']['coordinates'][0])
-    lats.append(eq_feature['geometry']['coordinates'][1])
-    event_titles.append(eq_feature['properties']['title'])
+    try:
+        mag = eq_feature['properties']['mag']
+        lon = eq_feature['geometry']['coordinates'][0]
+        lat = eq_feature['geometry']['coordinates'][1]
+        event = eq_feature['properties']['title']
+    except ValueError:
+        if eq_feature['properties']['mag'] is None:
+            continue
+    else:
+        mags.append(mag)
+        longs.append(lon)
+        lats.append(lat)
+        hover_texts.append(event)
 
 # Style and map the earthquakes
 data = [{
     'type': 'scattergeo',
     'lon': longs,
     'lat': lats,
-    'text': event_titles,
-    'maker': {
-        'size': [5 * mag for mag in mags],
+    'text': hover_texts,
+    'marker': {
+        'size': [5 * mag for mag in mags if mag is not None],
         'color': mags,
-        'colorscale': 'Inferno',
-        'reverserscale': True,
+        'colorscale': 'Cividis',
+        'reversescale': True,
         'colorbar': {'title': 'Magnitude'}
     }
 }]

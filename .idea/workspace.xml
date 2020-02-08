@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca913755-341f-4e80-a1ce-b3830c4dd2a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/latest_eq_data_30_m1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/ready_record.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eq_html_plots/global_earthquakes_30days.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/latest_eq_analysis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/read_json_file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eq_html_plots/latest_eq_1month.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/earthquake_visual.py" beforeDir="false" afterPath="$PROJECT_DIR$/earthquake_visual.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eq_html_plots/global_earthquakes_visualization.html" beforeDir="false" afterPath="$PROJECT_DIR$/eq_html_plots/global_earthquakes_visualization.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest_eq_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/latest_eq_analysis.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,9 +110,6 @@
       <module name="earth_quake_analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="/usr/local/bin/python3.7" />
       <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop/python_work" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -196,9 +188,13 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="461" y="239" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1580935991170" />
-    <state x="637" y="432" key="com.intellij.ide.util.TipDialog" timestamp="1581100352739">
+    <state x="100" y="100" width="1720" height="1000" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1581196415388">
+      <screen x="0" y="23" width="1920" height="1100" />
+    </state>
+    <state x="100" y="100" width="1720" height="1000" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1920.1100@0.23.1920.1100" timestamp="1581196415388" />
+    <state x="637" y="432" key="com.intellij.ide.util.TipDialog" timestamp="1581199694810">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="637" y="432" key="com.intellij.ide.util.TipDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1581100352739" />
+    <state x="637" y="432" key="com.intellij.ide.util.TipDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1581199694810" />
   </component>
 </project>
