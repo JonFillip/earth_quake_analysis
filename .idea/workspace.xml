@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca913755-341f-4e80-a1ce-b3830c4dd2a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/eq_html_plots/latest_eq_1month.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/latest_eq_data_30_m1.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/latest_eq_data_30_m1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eq_html_plots/latest_eq_1month.html" beforeDir="false" afterPath="$PROJECT_DIR$/eq_html_plots/latest_eq_1month.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/latest_eq_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/latest_eq_analysis.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

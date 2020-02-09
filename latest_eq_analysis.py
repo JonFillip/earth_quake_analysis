@@ -40,7 +40,7 @@ data = [{
     'lat': lats,
     'text': hover_texts,
     'marker': {
-        'size': [5 * mag for mag in mags if mag is not None],
+        'size': [5 * mag for mag in mags if mag > 1],
         'color': mags,
         'colorscale': 'Cividis',
         'reversescale': True,
