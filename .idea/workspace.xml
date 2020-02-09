@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca913755-341f-4e80-a1ce-b3830c4dd2a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/data/earth_fires_7days.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/earth_fire.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eq_html_plots/fire_map.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/latest_eq_data_30_m1.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/latest_eq_data_30_m1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eq_html_plots/latest_eq_1month.html" beforeDir="false" afterPath="$PROJECT_DIR$/eq_html_plots/latest_eq_1month.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/latest_eq_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/latest_eq_analysis.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +43,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.latest_eq_analysis">
+  <component name="RunManager" selected="Python.earth_fire">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -57,6 +57,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
       <option name="SCRIPT_NAME" value="Users/johnphillip/Desktop/python_work/" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="earth_fire" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="earth_quake_analysis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="/usr/local/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop/python_work" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/earth_fire.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,9 +169,11 @@
       <item itemvalue="Python.earthquake_visual" />
       <item itemvalue="Python.read_json_file" />
       <item itemvalue="Python.latest_eq_analysis" />
+      <item itemvalue="Python.earth_fire" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.earth_fire" />
         <item itemvalue="Python.latest_eq_analysis" />
         <item itemvalue="Python.read_json_file" />
         <item itemvalue="Python.earthquake_visual" />
